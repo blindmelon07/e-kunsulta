@@ -64,9 +64,13 @@ $user = $userobj->userData();
                 <input class="p-2 w-full rounded border" type="text" name="usersearch" placeholder="Search users">
             </div>
             <div class="select-none overflow-hidden overflow-y-auto h-2/4">
-                <h2 class="font-bold text-lg my-4  px-6 select-none">Users</h2>
+                <h2 class="font-bold text-lg my-4  px-6 select-none">Patients</h2>
+
                 <ul class="select-none">
                     <!-- USER-LIST -->
+                  
+                    <?php $userobj->getUsers();?>
+                    
                 </ul>
             </div>
         </div>
